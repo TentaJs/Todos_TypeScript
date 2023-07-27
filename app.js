@@ -73,7 +73,7 @@
   }
   function handleSubmit(event) {
     event.preventDefault();
-
+    event.srcElement[0].value = ""
     createTodo({
       userId: Number(form.user.value),
       title: form.todo.value,
